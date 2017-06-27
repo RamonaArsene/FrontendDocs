@@ -26,39 +26,32 @@
         </div>
     </div>
 </div>
-<div>
-    <a href = "index.html"> Back to Home Page</a>
-</div>
 
+<div id="vizualizareItem">
+</div>
 <div class = "panel panel-default">
     <div class=""panel-heading description>
         Add Employee
     </div>
 
-    <button onClick = "convert()"> Convert </button>
-    <form>
+        <div class = "panel-body">
+            <p>
+                First Name: <input type = "text" id = "firstName"/>
+            </p>
+            <p>
+                Last Name: <input type = "text" id = "lastName"/>
+            </p>
+            <p>
+                Phone: <input type = "number" id = "phone"/>
+            </p>
+            <p>
+                Salary: <input type = "number" id = "salary"/>
+            </p>
+            <p>
+                <button onClick = "addEmployee()"> Add employee </button>
+            </p>
+        </div>
 
-
-    <div class = "panel-body">
-        <p>
-            First Name: <input type = "text" id = "firstName"/>
-        </p>
-        <p>
-            Last Name: <input type = "text" id = "lastName"/>
-        </p>
-        <p>
-            Phone: <input type = "text" id = "phone"/>
-        </p>
-        <p>
-            Salary: <input type = "number" id = "salary"/>
-        </p>
-        <p>
-            <button onClick = "addEmployee()"> Add employee </button>
-        </p>
-
-
-    </div>
-    </form>
 
     <div>
         <p>
@@ -73,6 +66,21 @@
             <button onClick = "deleteEmployee()"> Delete Last Employee </button>
         </p>
     </div>
+
+
+    <div>
+        <button onClick = "convert()"> Convert </button>
+    </div>
+    <div>
+        <p>
+            <button onClick = "sortBy()"> Salary Total </button>
+            Enter number: <input type = "number" id = "sortare"/>
+        </p>
+    </div>
+
+</div>
+<div>
+    <a href = "index.html"> Back to Home Page</a>
 </div>
 </body>
 </html>
