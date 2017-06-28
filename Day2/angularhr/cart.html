@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap-theme.css"/>
+</head>
+<body>
+
+<div ng-app="hrApp">
+    <div ng-controller = "ImageController">
+        <div class = "row" ng-repeat = "item in cartList">
+                <img ng-src={{item.name}} class="img-responsive" alt="Responsive image" height="400" width="400"/>
+                <p align = "right">
+                    {{item.model}}
+                </p>
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="bower_components/jquery/jquery.js"></script>
+<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="scripts/app.js"></script>
+<script type="text/javascript" src="scripts/ImageController.js"></script>
+</body>
+</html>
