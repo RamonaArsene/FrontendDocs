@@ -1,0 +1,80 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h2 class="panel-title"> <b> Add User </b> </h2>
+    </div>
+    <div class="panel-body">
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    First Name: <input type="text" ng-model="user.firstName">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="form-group">
+                    Last Name: <input type="text" ng-model="user.lastName">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    Email: <input type="text" ng-model="user.email">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="form-group">
+                    CNP: <input type="text" ng-model="user.id">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1">
+                <div class="container">
+                    <button class="btn btn-primary btn-lg" ng-click="back()">Back</button>
+                </div>
+            </div>
+            <div class="col-md-1">
+                <div class="container">
+                    <button class="btn btn-primary btn-lg" ng-click="reset()">Reset</button>
+                </div>
+            </div>
+            <div class="col-md-1">
+                <div class="container">
+                    <button class="btn btn-primary btn-lg" ng-click="save()">Save</button>
+                </div>
+            </div>
+            <div class="col-md-1">
+                <div class="container">
+                    <button class="btn btn-primary btn-lg" ng-click="show()">Show/Hide User List</button>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron" ng-show="usersList">
+            <table class="table table-striped">
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>CNP</th>
+                </tr>
+                <tr ng-repeat="u in users">
+                    <td class="text-center">
+                        {{u.firstName}}
+                    </td>
+                    <td class="text-center">
+                        {{u.lastName}}
+                    </td>
+                    <td class="text-center">
+                        {{u.email}}
+                    </td>
+                    <td class="text-center">
+                        {{u.id}}
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+
+    </div>
+</div>
