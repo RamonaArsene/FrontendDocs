@@ -5,7 +5,6 @@ hrApp.config(['$routeProvider', function($routeProvider){
         when('/',{
             templateUrl:'views/main.html',
             controller:'MainController'
-            //controller:
     }).
         when('/math', {
             templateUrl: 'views/demo/math.html',

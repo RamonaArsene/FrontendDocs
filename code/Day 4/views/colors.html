@@ -1,0 +1,7 @@
+
+<div >
+    <select  ng-options = "color.text for color in colors" ng-model = "selColor2"></select>
+    <select  ng-options = "color.text group by color.type for color in colors" ng-model = "selColor" ng-change = changeColor()></select>
+
+   <h1> <span ng-class = "colorClass.class"> Some text</span> </h1>
+</div>
